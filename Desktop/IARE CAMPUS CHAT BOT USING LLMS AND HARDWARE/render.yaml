@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: campus-chat-bot
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_SUPABASE_PROJECT_ID
+        value: bwpebgmfkdfemxfjdexv
+      - key: VITE_SUPABASE_PUBLISHABLE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3cGViZ21ma2RmZW14ZmpkZXh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgwMzUyMDEsImV4cCI6MjA4MzYxMTIwMX0.Wj5kDCj4C_BPz7Q2gQ4WPdTe8Kfy2LL7wK1hbER-k1E
+      - key: VITE_SUPABASE_URL
+        value: https://bwpebgmfkdfemxfjdexv.supabase.co

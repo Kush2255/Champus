@@ -100,20 +100,22 @@ This project is built with:
 
 ## How can I deploy this project?
 
-### Deploy to Vercel
+### Deploy to Render
 
-1. **Sign up/Login to Vercel**: Go to [vercel.com](https://vercel.com) and sign in with your GitHub account.
+1. **Sign up/Login to Render**: Go to [render.com](https://render.com) and sign in with your GitHub account.
 
-2. **Import Project**: Click "New Project" and import your repository from GitHub.
+2. **Connect Repository**: Click "New" and select "Static Site", then connect your GitHub repository.
 
 3. **Configure Build Settings**:
-   - Framework Preset: Vite
    - Build Command: `npm run build`
-   - Output Directory: `dist`
-   - Install Command: `npm install`
+   - Publish Directory: `dist`
+   - Node Version: 18 or latest
 
-4. **Environment Variables**: Add any necessary environment variables (e.g., Supabase keys) in the project settings.
+4. **Environment Variables**: Add the following environment variables in the project settings:
+   - `VITE_SUPABASE_PROJECT_ID`: `bwpebgmfkdfemxfjdexv`
+   - `VITE_SUPABASE_PUBLISHABLE_KEY`: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3cGViZ21ma2RmZW14ZmpkZXh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgwMzUyMDEsImV4cCI6MjA4MzYxMTIwMX0.Wj5kDCj4C_BPz7Q2gQ4WPdTe8Kfy2LL7wK1hbER-k1E`
+   - `VITE_SUPABASE_URL`: `https://bwpebgmfkdfemxfjdexv.supabase.co`
 
-5. **Deploy**: Click "Deploy" to start the deployment process.
+5. **Deploy**: Click "Create Static Site" to start the deployment process.
 
-Your app will be live at a Vercel-provided URL (e.g., `your-project.vercel.app`). You can customize the domain in Vercel's dashboard.
+Your app will be live at a Render-provided URL (e.g., `your-project.onrender.com`). You can customize the domain in Render's dashboard.
