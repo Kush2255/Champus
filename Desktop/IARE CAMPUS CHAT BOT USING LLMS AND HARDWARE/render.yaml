@@ -2,7 +2,6 @@ services:
   - type: web
     name: campus-chat-bot
     env: static
-    rootDir: "IARE CAMPUS CHAT BOT USING LLMS AND HARDWARE"
     buildCommand: npm run build
     staticPublishPath: dist
     envVars:
