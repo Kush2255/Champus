@@ -1,0 +1,1 @@
+ALTER TABLE public.chat_history ADD COLUMN images jsonb DEFAULT NULL;
