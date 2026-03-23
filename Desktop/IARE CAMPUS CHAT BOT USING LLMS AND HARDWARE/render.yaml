@@ -3,7 +3,7 @@ services:
     name: campus-chat-bot
     env: static
     rootDir: "."
-    buildCommand: npm run build
+    buildCommand: "cd .. && npm run build"
     staticPublishPath: dist
     envVars:
       - key: VITE_SUPABASE_PROJECT_ID
